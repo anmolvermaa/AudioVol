@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#F2B705</color>
+    <color name="blue">#3FB6FF</color>
+    <color name="dark_blue">#3FB6FF</color>
+    <color name="red">#FF6B5B</color>
+    <color name="text_grey">#868D98</color>
+    <color name="light_grey">#565D68</color>
+    <color name="border">#262C36</color>
+    <color name="fill">#151920</color>
+    <color name="fill_media">#342f1c</color>
+    <color name="fill_phone">#1b2f3f</color>
+    <color name="fill_alarm">#362428</color>
+
+
+</resources>

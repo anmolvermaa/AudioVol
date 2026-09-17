@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/border"
+    app:cardBackgroundColor="@color/fill">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/phone"
+            android:padding="12dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/border_media"/>
+
+        <TextView
+            android:id="@+id/mediatext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/icon"
+            android:text="Media"/>
+
+        <TextView
+            android:id="@+id/subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/light_grey"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_below="@+id/mediatext"
+            android:textSize="14sp"
+            android:text="Music, video, apps"/>
+
+        <TextView
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:textSize="16sp"
+            android:textColor="@color/text_grey"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+
+
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:paddingHorizontal="17dp"
+            android:paddingVertical="17dp"
+            android:layout_below="@+id/icon"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/minus"/>
+
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_toEndOf="@id/minus"
+            android:paddingHorizontal="17dp"
+            android:paddingVertical="14dp"
+            android:layout_below="@+id/icon"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/plus"/>
+
+        <com.audiovol.SegmentedBarView
+            android:id="@+id/volumeBar"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/icon"
+            android:layout_toEndOf="@+id/plus"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignBottom="@id/minus"/>
+
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
